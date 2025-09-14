@@ -1,0 +1,23 @@
+{
+	"name": "MettaDataDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "myntracopydataLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "gitcsvs",
+				"fileSystem": "myntrasinkcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
