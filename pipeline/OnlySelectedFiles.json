@@ -54,7 +54,13 @@
 							"name": "If Conditionmatches",
 							"type": "IfCondition",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@item().name",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
