@@ -1,0 +1,9 @@
+{
+	"name": "azuredatafactoryformyntra",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "655adf1e-7e29-404f-8bbe-e2ede674931c",
+		"tenantId": "a86a3fbe-8fd8-4eb7-88af-5e0978f94c3b"
+	}
+}
