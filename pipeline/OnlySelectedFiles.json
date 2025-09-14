@@ -62,7 +62,7 @@
 								},
 								"ifTrueActivities": [
 									{
-										"name": "Copy Fact Data",
+										"name": "Copy FactData",
 										"type": "Copy",
 										"dependsOn": [],
 										"policy": {
