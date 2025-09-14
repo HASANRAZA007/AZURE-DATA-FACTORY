@@ -5,6 +5,10 @@
 		"typeProperties": {
 			"sources": [
 				{
+					"dataset": {
+						"referenceName": "DelimitedTextDataFlowSource",
+						"type": "DatasetReference"
+					},
 					"name": "sourceCSV"
 				}
 			],
@@ -12,7 +16,8 @@
 			"transformations": [],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> sourceCSV"
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourceCSV"
 			]
 		}
 	}
