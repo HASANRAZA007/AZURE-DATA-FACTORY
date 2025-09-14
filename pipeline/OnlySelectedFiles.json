@@ -57,7 +57,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@item().name",
+									"value": "@startswith(item().name,'2010')",
 									"type": "Expression"
 								}
 							}
