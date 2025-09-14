@@ -1,0 +1,53 @@
+{
+	"name": "DelimitedTextlocaldata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "myntracopydataLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "myntra_dataset_ByScraping.csv",
+				"folderPath": "myntracsvfiles",
+				"fileSystem": "myntrasorucecontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "brand_name",
+				"type": "String"
+			},
+			{
+				"name": "pants_description",
+				"type": "String"
+			},
+			{
+				"name": "price",
+				"type": "String"
+			},
+			{
+				"name": "MRP",
+				"type": "String"
+			},
+			{
+				"name": "discount_percent",
+				"type": "String"
+			},
+			{
+				"name": "ratings",
+				"type": "String"
+			},
+			{
+				"name": "number_of_ratings",
+				"type": "String"
+			}
+		]
+	}
+}
