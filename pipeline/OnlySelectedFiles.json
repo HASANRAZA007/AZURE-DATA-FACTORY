@@ -138,7 +138,7 @@
 				}
 			},
 			{
-				"name": "Data flow1",
+				"name": "DataTransformation",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [
 					{
@@ -157,6 +157,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow1",
+						"type": "DataFlowReference"
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
