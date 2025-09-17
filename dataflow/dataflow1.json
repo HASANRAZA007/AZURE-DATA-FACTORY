@@ -23,6 +23,9 @@
 				},
 				{
 					"name": "filterRows"
+				},
+				{
+					"name": "split1"
 				}
 			],
 			"scriptLines": [
@@ -50,7 +53,9 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> selectcolumns",
 				"selectcolumns derive(CustomerID = toInteger(CustomerID)) ~> ModifyColumns1",
-				"ModifyColumns1 filter(CustomerID != 13267) ~> filterRows"
+				"ModifyColumns1 filter(CustomerID != 13267) ~> filterRows",
+				"filterRows split(ERROR_FUNCTION(''),",
+				"     disjoint: false) ~> split1@(Germany, )"
 			]
 		}
 	}
