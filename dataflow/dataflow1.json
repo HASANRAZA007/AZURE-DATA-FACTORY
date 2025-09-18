@@ -55,8 +55,7 @@
 				"selectcolumns derive(CustomerID = toInteger(CustomerID)) ~> ModifyColumns1",
 				"ModifyColumns1 filter(CustomerID != 13267) ~> filterRows",
 				"filterRows split(Country=='Germany',",
-				"     Country!='United Kingdom',",
-				"     disjoint: false) ~> split1@(Germany, otherthangermany, otherthanall)"
+				"     disjoint: false) ~> split1@(Germany, otherthanall)"
 			]
 		}
 	}
