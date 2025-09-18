@@ -54,9 +54,9 @@
 				"     skipDuplicateMapOutputs: true) ~> selectcolumns",
 				"selectcolumns derive(CustomerID = toInteger(CustomerID)) ~> ModifyColumns1",
 				"ModifyColumns1 filter(CustomerID != 13267) ~> filterRows",
-				"filterRows split(ERROR_FUNCTION(''),",
-				"     ERROR_FUNCTION(''),",
-				"     disjoint: false) ~> split1@(Germany, otherthangermany, )"
+				"filterRows split(Country=='Germany',",
+				"     Country=='United Kingdom',",
+				"     disjoint: false) ~> split1@(Germany, otherthangermany, other)"
 			]
 		}
 	}
